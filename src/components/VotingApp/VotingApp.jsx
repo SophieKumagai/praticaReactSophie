@@ -45,7 +45,8 @@ function VotingApp() {
             }
         }
 
-        return candidates.filter((candidates) => candidates.qtVotos >= maior)
+        const winners = candidates.filter((candidates) => candidates.qtVotos >= maior)
+        return winners
     }
 
     return (
