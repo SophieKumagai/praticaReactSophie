@@ -46,7 +46,11 @@ function VotingApp() {
         }
 
         const winners = candidates.filter((candidates) => candidates.qtVotos >= maior)
-        return winners
+        let str
+        for (let i = 0; i < winners.length; i++) {
+            str += winners
+        }
+        return str
     }
 
     return (
